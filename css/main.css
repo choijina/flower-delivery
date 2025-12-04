@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* hero */
+.hero h1 {margin-bottom: 16px;}
+.hero h1 sup {font-size: 40px;}
+.hero .subtitle {margin-bottom: 54px;}
+.hero .subtitle span {font-weight: 100;font-style: italic;}
+
+.hero figure {padding-top: 24px;}
+.hero figure img {width: 100%; padding-right: 24px; border-right: 1px solid var(--black);}
+.hero figcaption {padding-left: 24px; display: flex;align-items: flex-end;}
+
+.products li {border-bottom: 1px solid var(--black);}
+.products li:nth-child(odd) .img_wrap {border-left: 1px solid var(--black);}
+.products li:nth-child(even) .img_wrap {border-right: 1px solid var(--black);}
+.products li:last-child {border-bottom: none;}
+.products .desc {display: flex; flex-direction: column; padding: 24px;}
+.products .desc h3 {flex: 1; display: flex; align-items: center; justify-content: center;}
+.products a {display: flex; justify-content: center; align-items: center; gap: 4px;}
+.products .img_wrap img {width: 100%;}
+.products li:nth-child(even) .img_wrap {order: -1;}
+
+/* about_us */
+.benefits_list li {display: flex; flex-direction: column; gap: 16px; border-bottom: 1px solid var(--black);}
+.benefits_list li:last-child {border-bottom: none;}
+
+/* contact  */
+.contact .column_left {display: flex; flex-direction: column;}
+.contact .column_left .grid {flex: 1;}
+.contact .column_left .grid > div {display: flex; flex-direction: column;}
+.contact .column_left > .content {border-bottom: 1px solid var(--black);}
+.contact .column_left h2 {margin-bottom: 24px;}
+.contact .column_left h2+p {margin-bottom: 16px;}
+.contact form {gap: 16px; margin-bottom: 18px;}
+.contact h3 {display: flex; justify-content: center; align-items: center; height: 78px; border-bottom: 1px solid var(--black);}
+.contact .phone h3 {border-right: 1px solid var(--black);}
+.contact .grid .content {flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; font-weight: 600;}
+.contact .phone .content {border-right: 1px solid var(--black, #121212);}
+.contact .address .content p:first-child {font-weight: 500; text-transform: uppercase;}
+.contact .column_right > img {width: 100%; height: 642px; object-fit: cover;}
+.contact .column_right h3 {border-bottom: none;}
+.contact .column_right ul {gap: 24px; justify-content: center; align-items: center; border-left: 1px solid var(--black);}
+
+/* service_subscribe  */
+.service_subscribe h2 {display: flex; justify-content: center; border-bottom: 1px solid var(--black);}
+.service_subscribe img {width: 100%; height: 720px; object-fit: cover;}
+.service_subscribe .column_right {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-left: 1px solid var(--black);}
+
+/* service_event_deco  */
+.service_event_deco {height: 720px; background: url(../images/service_section_bg.jpg) no-repeat center center/cover; display: flex; justify-content: center; align-items: center; text-align: center; color: #FFFFFF;}
+.service_event_deco a {color: #FFFFFF; border-color: #FFFFFF;}
+.service_event_deco h3 {margin: 24px auto;}
+.service_event_deco p {margin-bottom: 64px; width: 100%; max-width: 586px;}
+
+/* review  */
+.review h2 {text-align: center; margin: 24px auto 16px;}
+.review h3 {display: flex; flex-direction: column; justify-content: center; align-items: center; text-transform: uppercase; gap: 8px; font-weight: 500;}
+.swiper-slide {height: 147px;}
+.review blockquote {text-align: center;}
+.review blockquote small {font-weight: 500;}
+.review blockquote p {font-size: 28px; line-height: 1.2; font-style: italic; font-weight: 100; width: 90%; max-width: 1100px; margin: 0 auto 16px;}
+.review blockquote p::before {content: '\201C'; display: inline-block; font-size: 32px; font-family: 'BIZ UDGothic', sans-serif;}
+.review blockquote p::after {content: '\201D'; display: inline-block; font-size: 32px; font-family: 'BIZ UDGothic', sans-serif;}
+
+.review_slide .swiper-horizontal > .swiper-pagination-bullets,
+.review_slide .swiper-pagination-bullets.swiper-pagination-horizontal {bottom: 0;}
+
+.review_slide button {position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; z-index: 100;}
+.review_slide .prev {left: 0;}
+.review_slide .next {right: 0;}
+.review_slide .swiper-pagination-bullet-active {background: var(--gray);}
+.review > p {text-align: center; margin-top: 64px;}
